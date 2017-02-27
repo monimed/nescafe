@@ -1,0 +1,502 @@
+<!--INICIO DE SECCION -->
+	<section>
+            <div class="main-container">
+                <div class="main">
+                    <div class="col-main">
+                        <div class="page-title">
+                            <span>Registro de Pago</span>
+                        </div>
+                        <ol class="opc opc-firststep-billing panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <li id="opc-billing" class="section allow active panel panel-default">
+                                <div class="step-title panel-heading" role="tab" id="headingOne">
+                                    <span class="number">1</span>
+                                    <h2 class="panel-title">Información de envío</h2>
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick='$("html, body").animate({ scrollTop: $("#accordion").offset().top }, 500);'>Modificar</a>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <form id="co-billing-form" action="">
+                                        <div class="fieldset panel-body">
+                                            <p class="required">* Campos Requeridos</p>
+                                            <ul class="form-list">
+                                                <li class="wide">
+                                                    <label for="billing-address-select">Selecciones una dirección de envío de su libreta de direcciones o ingrese una nueva</label>
+                                                    <div class="input-box">
+                                                        <select name="billing_address_id" id="billing-address-select" class="address-select" title="" >
+                                                        <option value=""  selected="selected">Nuevas direcciones</option>
+                                                            <option value="1">Luis Flores, CARLOS SANTAN 100, VENUSTIANO CARRANZA, Distrito Federal 15500, México</option>
+                                                            <option value="2">Luis Flores, RET 9 FCO DEL PASO Y TRONCOSO, VENUSTIANO CARRANZA, Distrito Federal 15900, México</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li id="billing-new-address-form" class="scaffold-form">
+                                                    <div class="fieldset">
+                                                        <input name="billing[address_id]" value="31" id="billing:address_id" type="hidden">
+                                                        <ul>
+                                                            <li class="fields"><div class="customer-name">
+                                                                    <div class="field name-firstname">
+                                                                        <label for="billing:firstname" class="required"><em>*</em>Nombre</label>
+                                                                        <div class="input-box">
+                                                                            <input id="billing:firstname" name="billing[firstname]" value="Luis" title="Nombre" maxlength="255" class="input-text required-entry" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field name-lastname">
+                                                                        <label for="billing:lastname" class="required"><em>*</em>Apellido</label>
+                                                                        <div class="input-box">
+                                                                            <input id="billing:lastname" name="billing[lastname]" value="Flores" title="Apellido" maxlength="255" class="input-text required-entry" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="fields">
+                                                                <div class="field">
+                                                                    <label for="billing:company">Compañía</label>
+                                                                    <div class="input-box">
+                                                                        <input id="billing:company" name="billing[company]" value="" title="Compañía" class="input-text " type="text">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wide">
+                                                                <label for="billing:street1" class="required"><em>*</em>Dirección</label>
+                                                                <div class="input-box">
+                                                                    <input title="Calle" name="billing[street][]" id="billing:street1" value="RET 9 FCO DEL PASO Y TRONCOSO" class="input-text  required-entry" type="text">
+                                                                </div>
+                                                            </li>
+                                                            <li class="wide">
+                                                                <label for="billing:street2">Street Address 2</label>
+                                                                <div class="input-box">
+                                                                    <input title="Street Address 2" name="billing[street][]" id="billing:street2" value="" class="input-text " type="text">
+                                                                </div>
+                                                            </li>
+                                                            <li class="fields">
+                                                                <div class="field">
+                                                                    <label for="billing:city" class="required"><em>*</em>Ciudad</label>
+                                                                    <div class="input-box">
+                                                                        <input title="Ciudad" name="billing[city]" value="VENUSTIANO CARRANZA" class="input-text  required-entry" id="billing:city" type="text">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field">
+                                                                    <label class="required"><em style="">*</em>Estado/Provincia</label>
+                                                                    <div class="input-box">
+                                                                        <select  title="Estado/Provincia" class="validate-select required-entry" >
+                                                                            <option value="">Por favor seleccione estado o provincia</option>
+                                                                            <option value=”Aguascalientes”>Aguascalientes</option>
+                                                                            <option value=”Baja California “>Baja California </option>
+                                                                            <option value=”Baja California Sur “>Baja California Sur </option>
+                                                                            <option value=”Campeche “>Campeche </option>
+                                                                            <option value=”Chiapas “>Chiapas </option>
+                                                                            <option value=”Chihuahua “>Chihuahua </option>
+                                                                            <option value=”Coahuila “>Coahuila </option>
+                                                                            <option value=”Colima “>Colima </option>
+                                                                            <option value=”Distrito Federal”>Distrito Federal</option>
+                                                                            <option value=”Durango “>Durango </option>
+                                                                            <option value=”Estado de México “>Estado de México </option>
+                                                                            <option value=”Guanajuato “>Guanajuato </option>
+                                                                            <option value=”Guerrero “>Guerrero </option>
+                                                                            <option value=”Hidalgo “>Hidalgo </option>
+                                                                            <option value=”Jalisco “>Jalisco </option>
+                                                                            <option value=”Michoacán “>Michoacán </option>
+                                                                            <option value=”Morelos “>Morelos </option>
+                                                                            <option value=”Nayarit “>Nayarit </option>
+                                                                            <option value=”Nuevo León “>Nuevo León </option>
+                                                                            <option value=”Oaxaca “>Oaxaca </option>
+                                                                            <option value=”Puebla “>Puebla </option>
+                                                                            <option value=”Querétaro “>Querétaro </option>
+                                                                            <option value=”Quintana Roo “>Quintana Roo </option>
+                                                                            <option value=”San Luis Potosí “>San Luis Potosí </option>
+                                                                            <option value=”Sinaloa “>Sinaloa </option>
+                                                                            <option value=”Sonora “>Sonora </option>
+                                                                            <option value=”Tabasco “>Tabasco </option>
+                                                                            <option value=”Tamaulipas “>Tamaulipas </option>
+                                                                            <option value=”Tlaxcala “>Tlaxcala </option>
+                                                                            <option value=”Veracruz “>Veracruz </option>
+                                                                            <option value=”Yucatán “>Yucatán </option>
+                                                                            <option value=”Zacatecas”>Zacatecas</option>
+                                                                        </select>
+                                                                        <!--<input id="billing:region" name="billing[region]" value="Distrito Federal" title="Estado/Provincia" class="input-text required-entry" style="" type="text">-->
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="fields">
+                                                                <div class="field">
+                                                                    <label for="billing:postcode" class="required"><em style="">*</em>C.P./Código Postal</label>
+                                                                    <div class="input-box">
+                                                                        <input title="C.P./Código Postal" name="billing[postcode]" id="billing:postcode" value="15900" class="input-text validate-zip-international" type="text">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field">
+                                                                    <label for="billing:country_id" class="required"><em>*</em>País</label>
+                                                                    <div class="input-box">
+                                                                        <select name="billing[country_id]" id="billing:country_id" class="validate-select" title="País"><option value=""> </option><option value="MX" selected="selected">México</option></select>                        </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="fields">
+                                                                <div class="field">
+                                                                    <label for="billing:telephone" class="required"><em>*</em>Teléfono</label>
+                                                                    <div class="input-box">
+                                                                        <input name="billing[telephone]" value="5528536393" title="Teléfono" class="input-text  required-entry" id="billing:telephone" type="tel">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field">
+                                                                    <label for="billing:fax">Fax</label>
+                                                                    <div class="input-box">
+                                                                        <input name="billing[fax]" value="" title="Fax" class="input-text " id="billing:fax" type="tel">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+                                                            <li class="control">
+                                                                <input name="billing[save_in_address_book]" value="1" title="Guardar en libro de direcciones" id="billing:save_in_address_book" class="checkbox" type="checkbox"><label for="billing:save_in_address_book">Guardar en libro de direcciones</label>
+                                                            </li>
+                                                        </ul>
+                                                        <!--<div class="remember-me-popup">
+                                                            <div class="remember-me-popup-head">
+                                                                <h3>What's this?</h3>
+                                                                <a href="#" class="remember-me-popup-close" title="Cerrar">Cerrar</a>
+                                                            </div>
+                                                            <div class="remember-me-popup-body">
+                                                                <p>Checking "Remember Me" will let you access your shopping cart on this computer when you are logged out</p>
+                                                                <div class="remember-me-popup-close-button a-right">
+                                                                    <a href="#" class="remember-me-popup-close button" title="Cerrar"><span>Cerrar</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>-->
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <input name="billing[use_for_shipping]" value="1" type="hidden">
+                                            <div class="buttons-set" id="billing-buttons-container">
+
+                                                <button type="button" title="Continuar" class="button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo" onclick='$("html, body").animate({ scrollTop: $("#accordion").offset().top }, 500);'><span><span>Continuar</span></span></button>
+                                                <!--<span class="please-wait" id="billing-please-wait" >
+                                                    <img src="bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...</span>-->
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li id="opc-payment" class="section panel panel-default">
+                                <div class="step-title panel-heading" role="tab" id="headingThree">
+                                    <span class="number">2</span>
+                                    <h2 class="panel-title">Información de Pago</h2>
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick='$("html, body").animate({ scrollTop: $("#accordion").offset().top }, 500);'>Modificar</a>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse step a-item" role="tabpanel" aria-labelledby="headingThree">
+                                    <form action="" id="co-payment-form">
+                                        <div class="panel-body fieldset">
+                                            <div class="sp-methods" id="checkout-payment-method-load">
+                                                <dt id="dt_method_paypal_express">
+                                                    <!-- Mercado Pago -->
+                                                    <div class="control">
+                                                        <input id="p_method_paypal_express" value="mercado-pago"  class="radio" autocomplete="off" type="radio">
+                                                        <label for="p_method_mercado_pago"> <!-- MercadoPago Logo -->
+                                                            <img src="bootstrap/assets/images/checkout/mercadopago.png" class="v-middle" alt="Acceptance Mark">&nbsp;
+                                                            <a href="https://www.mercadopago.com.mx/?gclid=Cj0KEQiAuJXFBRDirIGnpZLE-N4BEiQAqV0KGnhBop5EkvgO66fMifLpgxWFTyxmMjST3mSvcZChG5YaArkJ8P8HAQ">¿Qué es MercadoPago?</a>
+                                                        </label>
+                                                    </div>
+                                                </dt>
+                                                <dt id="dt_method_ccsave">
+                                                    <div class="control">
+                                                        <input id="p_method_ccsave" value="ccsave" name="payment[method]" title="Credit Card (saved)" checked="checked" class="radio" autocomplete="off" type="radio">
+                                                        <label for="p_method_ccsave">Tarjeta de Credito</label>
+                                                    </div>
+                                                </dt>
+                                                <dd id="dd_method_ccsave">
+                                                    <ul class="form-list" id="payment_form_ccsave" style="">
+                                                        <li>
+                                                            <p class="required">* Campos Requeridos</p>
+                                                            <label for="ccsave_cc_owner" class="required"><em>*</em>Titular de la tarjeta</label>
+                                                            <div class="input-box">
+                                                                <input title="Titular de la tarjeta" class="input-text required-entry" id="ccsave_cc_owner" name="payment[cc_owner]" value="" autocomplete="off" type="text">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <label for="ccsave_cc_type" class="required"><em>*</em>Tipo de tarjeta de crédito</label>
+                                                            <div class="input-box">
+                                                                <select id="ccsave_cc_type" name="payment[cc_type]" title="Tipo de tarjeta de crédito" class="required-entry validate-cc-type-select" autocomplete="off">
+                                                                    <option value="">--Seleccionar Por Favor--</option>
+                                                                    <option value="AE">American Express</option>
+                                                                    <option value="VI">Visa</option>
+                                                                    <option value="MC">MasterCard</option>
+                                                                    <option value="DI">Discover</option>
+                                                                </select>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <label for="ccsave_cc_number" class="required"><em>*</em>Número de Tarjeta de Crédito</label>
+                                                            <div class="input-box">
+                                                                <input pattern="\d*" id="ccsave_cc_number" name="payment[cc_number]" title="Número de Tarjeta de Crédito" class="input-text validate-cc-number validate-cc-type" value="" autocomplete="off" type="text">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <label for="ccsave_expiration" class="required"><em>*</em>Fecha de Vencimiento</label>
+                                                            <div class="input-box">
+                                                                <div class="v-fix">
+                                                                    <select id="ccsave_expiration" name="payment[cc_exp_month]" class="month validate-cc-exp required-entry" autocomplete="off">
+                                                                        <option value="" selected="selected">Mes</option>
+                                                                        <option value="1">01 - enero</option>
+                                                                        <option value="2">02 - febrero</option>
+                                                                        <option value="3">03 - marzo</option>
+                                                                        <option value="4">04 - abril</option>
+                                                                        <option value="5">05 - mayo</option>
+                                                                        <option value="6">06 - junio</option>
+                                                                        <option value="7">07 - julio</option>
+                                                                        <option value="8">08 - agosto</option>
+                                                                        <option value="9">09 - septiembre</option>
+                                                                        <option value="10">10 - octubre</option>
+                                                                        <option value="11">11 - noviembre</option>
+                                                                        <option value="12">12 - diciembre</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="v-fix">
+                                                                    <select id="ccsave_expiration_yr" name="payment[cc_exp_year]" class="year required-entry" autocomplete="off">
+                                                                        <option value="" selected="selected">Año</option>
+                                                                        <option value="2017">2017</option>
+                                                                        <option value="2018">2018</option>
+                                                                        <option value="2019">2019</option>
+                                                                        <option value="2020">2020</option>
+                                                                        <option value="2021">2021</option>
+                                                                        <option value="2022">2022</option>
+                                                                        <option value="2023">2023</option>
+                                                                        <option value="2024">2024</option>
+                                                                        <option value="2025">2025</option>
+                                                                        <option value="2026">2026</option>
+                                                                        <option value="2027">2027</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="cvv">
+                                                            <label for="ccsave_cc_number" class="required"><em>*</em>Número CVV</label>
+                                                            <div class="input-box">
+                                                                <input pattern="\d*" id="ccsave_cc_number" name="payment[cc_number]" title="Número de Tarjeta de Crédito" class="input-text validate-cc-number validate-cc-type" value="" autocomplete="off" type="password">
+                                                                <a data-toggle="modal" data-target="#ModalCvv">?</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="ModalCvv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">¿Qué es el número CVV?</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="tool-tip-content"><img src="bootstrap/assets/images/checkout/cvv.gif" alt="Número de verificación visual de la Tarjeta" title="Número de verificación visual de la Tarjeta"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="buttons-set" id="payment-buttons-container">
+
+                                        <p class="back-link"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick='$("html, body").animate({ scrollTop: $("#accordion").offset().top }, 500);'><small>« </small>Regresar</a></p>
+                                        <button type="button" class="button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick='$("html, body").animate({ scrollTop: $("#accordion").offset().top }, 500);'><span><span>Continuar</span></span></button>
+                                        <!--<span class="please-wait" id="payment-please-wait" >
+                                            <img src="bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>-->
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="opc-review" class="section panel panel-default">
+                                <div class="panel-heading step-title" role="tab" id="headingFour">
+                                    <span class="number">3</span>
+                                    <h2 class="panel-title">Reseña del Pedido</h2>
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick='$("html, body").animate({ scrollTop: $("#accordion").offset().top }, 500);'>Modificar</a>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse step a-item" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body order-review" id="checkout-review-load">
+                                        <h2>Resumen de la orden</h2>
+                                        <h3>Habitación</h3>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Nombre del producto</th>
+                                                    <th>Precio</th>
+                                                    <th>Cantidad</th>
+                                                    <th>Subtotal</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="delete"></th>
+                                                    <th class="item-image"><img src="bootstrap/assets/images/solucion/140757.jpg" alt="Cáfe americano" title="Cáfe americano" class="v-middle"/>Eclipse Titanium</th>
+                                                    <th>$3,230.00</th>
+                                                    <th>50</th>
+                                                    <th>$161,500.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="delete"></th>
+                                                    <th class="item-image"><img src="bootstrap/assets/images/solucion/1000131805.jpg" alt="Cáfe americano" title="Cáfe americano" class="v-middle"/>Café Americano</th>
+                                                    <th>$129.00</th>
+                                                    <th>200</th>
+                                                    <th>$25,800.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="delete"></th>
+                                                    <th class="item-image"><img src="bootstrap/assets/images/solucion/1000024568.jpg" alt="Cáfe americano" title="Cáfe americano" class="v-middle"/>Latte Macchiato</th>
+                                                    <th>$129.00</th>
+                                                    <th>200</th>
+                                                    <th>$25,800.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="delete"></th>
+                                                    <th class="item-image"><img src="bootstrap/assets/images/solucion/1000154731.jpg" alt="Cáfe americano" title="Cáfe americano" class="v-middle"/>Espresso 30 pack</th>
+                                                    <th>$129.00</th>
+                                                    <th>200</th>
+                                                    <th>$25,800.00</th>
+                                                </tr>
+                                            </tbody>
+                                            
+                                        </table>
+                                        <h3>Restaurante</h3>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Nombre del producto</th>
+                                                    <th>Precio</th>
+                                                    <th>Cantidad</th>
+                                                    <th>Subtotal</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="delete"></th>
+                                                    <th class="item-image"><img src="media/Res-1.jpg" alt="Cáfe americano" title="Cáfe americano" class="v-middle"/>
+                                                    <p>Nescafé Milano</p></th>
+                                                    <th>$3,230.00</th>
+                                                    <th>50</th>
+                                                    <th>$161,500.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="delete"></th>
+                                                    <th class="item-image"><img src="media/Res-2.jpg" alt="Cáfe americano" title="Cáfe americano" class="v-middle"/><p>Nescafé Milano espresso, 10 x 250gr</p></th>
+                                                    <th>$185.00</th>
+                                                    <th>200</th>
+                                                    <th>$37,000.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="delete"></th>
+                                                    <th class="item-image"><img src="media/Res-3.jpg" alt="Cáfe americano" title="Cáfe americano" class="v-middle"/><p>Taza nescafé Milano</p></th>
+                                                    <th>$124.00</th>
+                                                    <th>200</th>
+                                                    <th>$24,800.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="delete"></th>
+                                                    <th class="item-image"><img src="media/Res-4.jpg" alt="Cáfe americano" title="Cáfe americano" class="v-middle"/><p>Taza nescafé Milano</p></th>
+                                                    <th>$129.00</th>
+                                                    <th>200</th>
+                                                    <th>$25,800.00</th>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th class="item-option">Subtotal</th>
+                                                    <th>$488,000.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th class="item-option">Impuestos</th>
+                                                    <th>$23,544.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th class="item-option">Envío</th>
+                                                    <th>$70.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th class="item-option">Total habitación</th>
+                                                    <th>$511,614.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th class="item-option">Total restaurante</th>
+                                                    <th>$511,614.00</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                        <div class="links">
+                                            <form>
+                                                <li class="control">
+                                                    <p class="glyphicon glyphicon-refresh"><a class="change-section" section="detalledecarrito.html"> Modificar carrito</a></p>
+                                                    <div class="float-right">
+                                                    <input class="required-entry validation-passed" type="checkbox" id="id_accept_terms" name="accept_terms" value="1">
+                                                    <label for="id_accept_terms"><em style="color:red;">* </em>Acepto <a id="onestepcheckout-toc-link" target="_blank">Términos y Condiciones</a></label>
+                                                </li>
+                                            </form>
+                                        </div>
+                                        <div class="buttons-set" id="payment-buttons-container">
+
+                                            <!--<p class="back-link"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick='$("html, body").animate({ scrollTop: $("#accordion").offset().top }, 500);'><small>« </small>Regresar</a></p>-->
+                                            <button type="button" class="button ending change-section" section="dashboard.html" onclick='$("html, body").animate({ scrollTop:0 }, 500);'><span><span>Finalizar compra</span></span></button>
+                                            <!--<span class="please-wait" id="payment-please-wait" >
+
+                                                <img src="bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="col-right sidebar">
+                            <div id="checkout-progress-wrapper">
+                                <div class="block block-progress opc-block-progress">
+                                    <div class="block-title">
+                                        <strong><span>El progreso de su pago</span></strong>
+                                    </div>
+                                    <div class="block-content">
+                                        <div class="billing-progress-opcheckout">
+                                           <h5>Información de envío</h5>
+                                           <p><small>Lorem ipsum dolor sit amet, consectetur.</small></p>
+                                        </div>
+                                        <div class="shipping_method-progress-opcheckout">
+                                            <h5>Método de envío</h5>
+                                            <p><small>Lorem ipsum dolor sit amet, consectetur.</small></p>
+                                        </div>
+
+                                        <div class="payment-progress-opcheckout">
+                                            <h5>Método de pago</h5>
+                                            <p><small>Lorem ipsum dolor sit amet, consectetur.</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+	</section>
+
+
+<!--<script>
+    $j(document).ready(function(){
+    $j("#billing-address-select").change(function(){
+        var option=$j(this).val();
+        if (option=== ''){$j("#billing-new-address-form").show()}
+        else {$j("#billing-new-address-form").hide()}
+    });    
+    });
+</script>-->
+<!--FIN DE SECCION -->

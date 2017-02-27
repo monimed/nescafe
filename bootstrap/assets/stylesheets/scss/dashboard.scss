@@ -1,0 +1,58 @@
+
+//Estilos Dashboard
+.banner{
+    margin-bottom:2%;
+    img{
+        width: 100%;
+    }
+    div{
+        position: absolute;
+         font-family: 'NescafeSans-Bold', Arial;
+         width: 35%;
+         padding: 3% 0 0 5%;
+         font-size: 28px;
+         p{
+          .red{
+            text-align:center;
+          }  
+         }
+    }
+
+}
+
+.container{
+    .dash-container{
+        .pedidos, .credito, .suscripcion, .factura{
+            width: 24%;
+            float: left;
+            text-align: center;
+            margin: 0 auto;
+            a, button{
+                cursor: pointer;
+                text-decoration: none;
+                background: none;
+                border: none;
+                width: 100%;
+                box-shadow: none;
+                &:hover{
+                    opacity: 0.6;
+                }
+                
+                img{
+                    width: 33%;
+                }
+                span{
+                    display: block;
+                    color: $red;
+                    font-family: 'NescafeSans-Bold', Arial;
+                    font-size: 16px;
+                    font-weight: normal;
+                    margin-top: 5px;
+                }
+            }
+            .btn-credit{
+                height: 77px;
+            }
+        }
+    }
+}

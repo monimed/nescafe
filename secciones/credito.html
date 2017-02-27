@@ -1,0 +1,290 @@
+<script type="text/javascript">
+    dashInit();
+</script>
+<!--Banner-->
+<div class="banner">
+    <div>
+        <!-- <p class="red animated slideInDown">- Hola Luis -</p> -->
+        <p class="animated fadeInLeft">Te ofrecemos una <span class="red">solución especial</span> para las salas de reunión</p>
+    </div>
+    <img src="bootstrap/assets/images/dashboard/banner.jpg" alt="Banner" class="banner">
+</div>
+<div class="container">
+    
+    <section class="dashboard-credit">
+        
+        <div class="container">
+            <!--Dashboard-->
+            <div class="dash-container-credid">
+                <div class="pedidos">
+                    <a>
+                        <img src="bootstrap/assets/images/dashboard/pedidos.png" alt="Banner" class="banner change-section" section="dashboard.html" onclick="scrollUltimo()">
+                        <span>Últimos pedidos</span>
+                    </a>
+                </div>
+                <div class="credito">
+                    <a>
+                        <img src="bootstrap/assets/images/dashboard/credito-active.png" alt="Banner" class="banner">
+                        <span>Crédito disponibles</span>
+                    </a>
+                </div>
+                <div class="suscripcion">
+                    <a>
+                        <img src="bootstrap/assets/images/dashboard/suscripciones.png" alt="Banner" class="banner">
+                        <span>Plan de suscripción</span>
+                    </a>
+                </div>
+                <div class="factura">
+                    <a>
+                        <img src="bootstrap/assets/images/dashboard/factura.png" alt="Banner" class="banner">
+                        <span>Factura</span>
+                    </a>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div class="container wow fadeInUp">
+            <div class="page-title">
+                <span>Crédito Disponible</span>
+            </div>
+            <div class="col-left .col-md-4">
+                <ul>
+                    <li>
+                        <a href="#">Administración</a>
+                    </li>
+                    <li>
+                        <a href="#">Mi escritorio de trabajo</a>
+                    </li>
+                    <li>
+                        <a href="#">Mi cartera</a>
+                    </li>
+                    <li>
+                        <a href="#">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="#">Reportes</a>
+                    </li>
+                    <li>
+                        <a href="#">Pedidos</a>
+                    </li>
+                    <li>
+                        <a href="#">Estado de Cuenta</a>
+                    </li>
+                    <li>
+                        <a href="#">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#">Resolutivas</a>
+                    </li>
+                    <li>
+                        <a href="#">Contratos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-right .col-md-8">
+                <div class="col-right-content">
+                    <div class="search">
+                        <p>Información del Crédito</p>
+                        <span class="orden">Número de orden: <b>#008965</b></span>
+                        <table class="info-credit">
+                            <tr>
+                                <th>Saldo al Corte:</th>
+                                <th>$4,500.00</th>
+                            </tr>
+                            <tr>
+                                <th>Saldo Actual:</th>
+                                <th>$5,300.00</th>
+                            </tr>
+                            <tr>
+                                <th>Fecha Limite de Pago:</th>
+                                <th>3/03/2017</th>
+                            </tr>
+                        </table>
+                        <table class="info-pay">
+                            <tr>
+                                <th>Pago Mínimo:</th>
+                                <th>$2,100.00</th>
+                            </tr>
+                            <tr>
+                                <th>Pago Fijo:</th>
+                                <th>$2,100.00</th>
+                            </tr>
+                            <tr>
+                                <th>Pago Total al Mes:</th>
+                                <th>$5,300.00</th>
+                            </tr>
+                        </table>
+                        <div class="field">
+                            <label>Pedido:</label>
+                            <select>
+                                <option value="1">Seleciona la fecha</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="buttons-set">
+                        <button type="submit" class="enlace_txt_red"><span>Buscar</span></button>
+                        <a href="#" class="enlace_txt_red">Reporte PDF</a>
+                        <a href="#" class="enlace_txt_red">Excel</a>
+                        <button type="reset" class="enlace_txt_red"><span>Limpiar</span></button>
+                    </div>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseClave" aria-expanded="true" aria-controls="collapseClave">
+                                        Indicadores Clave
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseClave" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <div class="col-left">
+                                        <h4>VENCIDO</h4>
+                                        <table class="table-1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Concepto</th>
+                                                    <th>Tiempo Flujo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>DSO Cuenta corriente</th>
+                                                    <th>60</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Último DSO</th>
+                                                    <th>33</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Mejor DSO</th>
+                                                    <th>10</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Peor DSO</th>
+                                                    <th>60</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Plazo</th>
+                                                    <th>45</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4>A VENCER</h4>
+                                        <table class="table-2">
+                                            <thead>
+                                                <tr>
+                                                    <th>Concepto</th>
+                                                    <th>Eposición</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Validez garantía</th>
+                                                    <th>31/12/2017</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Monto Garatía</th>
+                                                    <th>$20,000,000.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Límite de Crédito</th>
+                                                    <th>$20,000,000.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Factor Riesgo</th>
+                                                    <th>0.98</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="col-right">
+                                        <h4>RESUMEN DEL SALDO</h4>
+                                        <table class="table-1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Concepto</th>
+                                                    <th>Balance de la cuenta</th>
+                                                    <th>%</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Saldo total</th>
+                                                    <th>$14,601,849</th>
+                                                    <th>100%</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Saldo corriente</th>
+                                                    <th>$14,913,253</th>
+                                                    <th>102%</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Saldo vencido</th>
+                                                    <th>$-311,404</th>
+                                                    <th>-2%</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Promedios pagos</th>
+                                                    <th>$10,606,627</th>
+                                                    <th>73%</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Promedio facturación</th>
+                                                    <th>$10,673,784</th>
+                                                    <th>73%</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Suma Pago /Suma</th>
+                                                    <th>$3,210,521</th>
+                                                    <th>-2%</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Facturación</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4>INFORMACIÓN GENERAL</h4>
+                                        <table class="table-2">
+                                            <thead>
+                                                <tr>
+                                                    <th>Concepto</th>
+                                                    <th>Calidad</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Notas de crédito</th>
+                                                    <th>$6,154,021.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>% Notas vs Facturación</th>
+                                                    <th>4.57%</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Notas de Cargos</th>
+                                                    <th>$500,000.00</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>% Notas vs Facturación</th>
+                                                    <th>0.37%</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <a class="enlace_txt_red">Ver detalle</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+</div>
+<script type="text/javascript">
+
+</script>
+<!--FIN DE SECCION 

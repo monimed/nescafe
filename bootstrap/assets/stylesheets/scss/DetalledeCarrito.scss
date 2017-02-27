@@ -1,0 +1,418 @@
+// ----------------------------------------------
+// Entrepids
+//Hoja de estilos para proyecto demo Nestle. Sección: Detalle de Carrito;
+.detail-cart{
+	.container{
+		.page-container{
+			height: 1100px;
+			.title-cart{
+				height: 100px;
+				h1{
+					font-size: 12pt;
+				    text-align: center;
+				    background: #fff;
+				    height: 20px;
+				    width: 20%;
+				    top: 31px;
+				    position: relative;
+				    z-index: 1;
+				    margin: 0 auto;
+				}
+				hr{
+					border: 1px solid #e1261c;
+    				width: 50%;				
+				}
+			}
+			.table-card {
+				left: 25px;
+				top: -21px;
+				height: auto;
+				h3{
+					font-size: 12pt;
+					background: #f3f3f3;
+					border-radius: 4px 4px 0 0;
+				    padding: 10px;
+				    text-align: center;
+				}
+				.delate-solution{
+					float: right;
+					line-height: 40px;
+					color:$red;
+					cursor: pointer;
+					&:after{
+						content:'\e014';
+						margin-left: 10px;
+						font-size: 11px;
+						font-family: 'Glyphicons Halflings';
+					}
+				}
+				hr{
+					border-color: 1px solid $red;
+					clear: both;
+				}
+				ul{
+					list-style: none;
+					li{
+						display: inline-block;
+						font-size: 10pt;
+					}
+					.a{
+						width: 25%;
+					}
+					.b, .c, .d, .e{
+						width: 18%;
+
+					}
+				}
+				.info-prod, .info-prod-2, .info-prod-3, .info-prod-4{
+					width: 100%;
+					height: 100px;
+					float: left;
+    				height: 145px;
+
+					ul{
+						list-style: none;
+						li{
+							display: inline-block;
+						}
+					.prod{
+						width: 25%;
+					    float: left;
+					    left: -22px;
+					    position: relative;
+
+						a{
+							width: 150px;
+						    height: 130px;
+						    overflow: hidden;
+						    padding: 0;
+						    margin: 0 8px;
+						    text-align: center;
+						    &:hover{
+						   		text-decoration: none;
+						   	}
+
+						}
+
+						img{
+							width: 60%;
+						    height: auto;
+						    margin: 0 0 10px 0;
+						    
+					        -webkit-backface-visibility: visible !important;
+						    backface-visibility: visible !important;
+						    -webkit-animation-name: flipInY;
+						    animation-name: flipInY;
+						    -webkit-animation-duration: 1s;
+						    animation-duration: 1s;
+						    -webkit-animation-fill-mode: both;
+						    animation-fill-mode: both;
+						}
+						.name{
+							color: #000000;
+							font-weight: 500;
+						    font-size: 9pt;
+						    text-align: left;
+						}
+						.sku{
+							color: $red;
+							font-weight: 500;
+							font-size: 8pt;
+    						margin-top: -10px;
+    						text-align: left;
+						}
+					}
+					.price{
+						width: 16%;
+					    top: 40px;
+					    position: relative;
+					    text-align: right;
+					    font-weight: 500;
+    					font-size: 10pt;
+					}
+					.count{
+						width: 14%;
+					    top: 40px;
+					    position: relative;
+					    border: 1px solid red;
+					    border-radius: 4px;
+					    text-align: center;
+					    margin: 0 auto;
+					    left: 46px;
+					    height: 26px;
+
+		    			#spinner{
+		    				width: 45%;
+						    border: none;
+						    outline: none;
+						    border-right: 1px solid;
+						    border-left: 1px solid;
+						    border-color: #e1261c;
+						    text-align: center;
+						    font-size: 15px;
+						    height: 24px;
+						}
+						.ui-spinner-button{
+							span{
+								display: none;
+							}
+						}
+						.ui-spinner-down{
+							float: left;
+							padding: 5px;
+							&:before{
+								content:'-';
+								font-size: 16px;
+								color: #000;
+								top: -5px;
+    							position: relative;
+							}
+							&:hover{
+							text-decoration: none;
+							}
+						}
+						.ui-spinner-up{
+							float: right;
+							padding: 5px;
+							&:before{
+								top: -5px;
+    							position: relative;
+								font-size: 16px;
+								content:'+';
+								color: #000;
+							}
+							&:hover{
+							text-decoration: none;
+							}
+						}
+					}
+					.total{
+					    top: 40px;
+					    position: relative;
+					    text-align: right;
+					    left: 78px;
+					    font-weight: 500;
+    					font-size: 10pt;
+    					width: 14%;
+
+
+					}
+					.delete{
+						height: 25px;
+					    top: 36px;
+					    position: relative;
+					    left: 115px;
+					    background: url(../../../../media/delete.svg) no-repeat 50% 50%;
+					    color: transparent;
+					    background-size: 50%;
+					    text-align: left;
+					    cursor: pointer;
+						}
+					}
+				}
+				.divider{
+					border: 1px solid #f3f3f3;
+				}
+				.button-all{
+					height: 170px;
+					button{
+						@include button_black;
+						margin: 0 20px;
+					width:160px;
+					}
+				}
+			}
+
+			//Finresumen
+			#accordion, .col-sm-4, .ui-accordion, .ui-widget, .ui-helper-reset{
+				background: #f3f3f3;
+				left: 42px;
+				border-radius: 4px 4px 0 0;
+				#ui-id-1, .ui-accordion-header{
+					#headingTwo{
+						a{
+							h3{
+							font-size: 12pt;
+							color: #000;
+								&:focus{
+									outline: 0;
+									}
+							}
+							.arrow-summary{
+								background: url(../../../../media/cart-arrow.svg) no-repeat 50% 50%;
+							    width: 20px;
+							    height: 20px;
+							    position: relative;
+							    top: -26px;
+							    left: -14px;
+							    background-size: 120%;
+							    float: right;
+							    padding: 10px;
+							}
+
+							hr{
+								border-color: $red;
+								clear: both;
+							}
+							&:hover{
+								text-decoration: none;
+							}
+						}
+						&:focus{
+							outline: 0;
+						}
+					}
+
+					#collapseTwo{
+						.card-block{
+							p{
+
+							}
+							.info{
+							h3{
+								font-size: 11pt;
+							}
+
+							.cp{
+								border: 1px solid $red;
+								border-radius: 4px;
+			    				padding: 5px 10px;
+			    				margin: 0 10px;
+			    				height: 35px;
+			    				font-size: 10pt;
+			    				font-family: 'NescafeSans-Bold';
+								}
+							.select-1{
+								margin: 10px 0;
+								width: 100%;
+								.country{
+								border: 1px solid $red;
+								border-radius: 4px;
+								padding: 5px 10px;
+								height: 35px;
+								-webkit-appearance: none;
+								-moz-appearance: none;
+				 				-ms-appearance: none;
+			    				width: 100%;
+			    				font-size:10pt;
+			    				font-family: 'NescafeSans-Bold';
+								}
+								.arrow{ 
+									background: url(../../../../media/cart-arrow.svg) no-repeat 50% 50%;
+								    width: 20px;
+								    height: 20px;
+								    position: relative;
+								    top: -26px;
+								    left: -14px;
+								    float: right;
+								    padding: 10px;
+								    .line-select{
+										border-left: 1px solid $red;
+										right: 20px;
+									    top: -10px;
+									    position: relative; 
+									}
+								}
+							}
+							.select-2{
+
+								margin: 10px 0;
+								width: 100%;
+								.city{
+									border: 1px solid $red;
+									border-radius: 4px;
+									height: 35px;
+									padding: 0px 8px;
+									-webkit-appearance: none;
+									-moz-appearance: none;
+				 				    -ms-appearance: none;
+			    					width: 100%;
+			    					font-size:10pt;
+			    					font-family: 'NescafeSans-Bold';
+									}
+								.arrow{
+									background: url(../../../../media/cart-arrow.svg) no-repeat 50% 50%;
+								    width: 20px;
+								    height: 20px;
+								    position: relative;
+								    top: -26px;
+								    left: -14px;
+								    float: right;
+								    padding: 10px;
+									}
+									.line-select{
+										border-left: 1px solid $red;
+										right: 20px;
+									    top: -10px;
+									    position: relative;
+									}
+								}
+								.Subtotal{
+									list-style: none;
+									li{
+										display: inline-block;
+										width: 48%;
+			    						margin: 0 2px;
+									}
+								}
+								.total{
+									list-style: none;
+									border-top: 1px solid #ccc;
+									li{
+										display: inline-block;
+										width: 48%;
+			    						margin: 10px 2px 0 2px;
+			    						font-weight: 600;
+			    						font-size: 12pt;
+									}
+								}
+							}	
+						}
+					}
+				}
+			}
+				//Finresumen
+				.table-total{
+					width: 100%;
+				    height: 50px;
+				    padding: 10px;
+				    top: 150px;
+				    position: relative;
+				    margin: 0 auto;
+				    text-align: center;
+				}
+			}
+			.gtotal{
+				position: relative;
+			    left: 41px;
+			    top: 25px;
+			    height: 60px;
+			    background:#f3f3f3;
+					.total-2{
+						list-style: none;
+						li{
+							display: inline-block;
+							width: 48%;
+    						margin: 0 2px;
+    						margin: 15px 0;
+    						font-weight: 600;
+    						font-size: 12pt;
+					}
+				}
+			}
+			.pay{
+				float: right;
+			    position: relative;
+			    top: 50px;
+			    left: 50px;
+			    background: none !important;
+			    button{
+					@include button_red;
+					font-family: 'NescafeSans-Bold';
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+

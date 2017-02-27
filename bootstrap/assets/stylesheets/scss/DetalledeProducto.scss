@@ -1,0 +1,613 @@
+// ----------------------------------------------
+// Entrepids
+//Hoja de estilos para proyecto demo Nestle. Sección: Detalle de Producto;
+.catalog-category-view{
+	.container{
+		.page-container{
+			overflow: hidden;
+			.breadcrumb{
+				background: none;
+				li{
+					a{
+					color: #434343;
+					}
+					&:before{
+						color: #434343;
+					}
+				}
+				.active{
+					color: $red;
+				}
+			}
+			.content-img{
+				height: auto;
+				.tickets{
+					position: relative;
+				    top: 10px;
+				    z-index: 2;
+				    .wish-1{
+				    	width: 35px;
+					    height: 35px;
+					    background: url(../../../../media/wish.svg) no-repeat 50% 50%;
+					    position: relative;
+					    float: right;
+					    top: 0px;
+					    left: 30px;
+					    cursor: pointer;
+					    z-index: 2;
+				    		&:hover{
+								background: url(../../../../media/wish-hover.svg) no-repeat 50% 50%;
+								width: 35px;
+							    height: 35px;
+							    position: relative;
+							    float: right;
+							    top: 0px;
+							    left: 30px;
+							    cursor: pointer;
+							    z-index: 2;
+				    	}
+
+				    }
+				    .share{
+				    	width: 35px;
+					    height: 35px;
+					    background: url(../../../../media/share.svg) no-repeat 50% 50%;
+					    position: relative;
+					    float: right;
+					    top: 50px;
+					    left: -5px;
+					    cursor: pointer;
+					    z-index: 2;
+					    clear: right;
+				    		&:hover{
+								width: 35px;
+							    height: 35px;
+							    background: url(../../../../media/share-hover.svg) no-repeat 50% 50%;
+							    position: relative;
+							    float: right;
+							    top: 50px;
+							    left: -5px;
+							    cursor: pointer;
+							    z-index: 2;
+							    clear: right;
+				    	}
+				    }
+					.new{
+					z-index: 999;
+				    background: #009437;
+				    width: 80px;
+				    height: 22px;
+				    line-height: 22px;
+				    text-align: center;
+				    color: #fff;
+				    display: block;
+					}
+					.promo-2{
+					z-index: 999;
+				    background: #0C5494;
+				    width: 80px;
+				    height: 22px;
+				    margin: 10px 0;
+				    line-height: 22px;
+				    text-align: center;
+				    color: #fff;
+				    display: block;
+					}
+				}
+				#imagePhoto{
+					height: 400px;
+					width: 100%;
+					position: relative;
+    				top: -60px;
+
+				.img-fluid{
+				    width: 80%;
+				    height: auto;
+				    margin: 0 55px;
+				    -webkit-backface-visibility: visible !important;
+					backface-visibility: visible !important;
+					-webkit-animation-name: flipInY;
+					animation-name: flipInY;
+					-webkit-animation-duration: 1s;
+					animation-duration: 1s;
+					-webkit-animation-fill-mode: both;
+					animation-fill-mode: both;
+					}
+				}
+
+				#thums{
+					#thums-slider{
+						position: relative;
+    					top: -80px;
+						.arrow-righ-t{
+							width: 35px;
+						    height: 35px;
+						    background: url(../../../../media/arrow-left.svg) no-repeat 35% 50%;
+						    color: transparent;
+						    top: 51px;
+						    position: absolute;
+						    z-index: 999;
+						    font-size:0px;
+
+							}
+							.arrow-left-t{
+								width: 35px;
+							    height: 35px;
+							    background: url(../../../../media/arrow-right.svg) no-repeat 35% 50%;
+							    color: transparent;
+							    top: 52px;
+							    left: 500px;
+							    position: absolute;
+							    z-index: 999;
+							    font-size:0px;
+							}
+						#thums-products{
+							width: 100% !important;
+						    height: 150px !important;
+						    position: relative;
+						    overflow: hidden;
+						    margin: 20px auto 0 auto;
+						    border-radius: 4px;
+							ul{
+								width: 623px  !important;
+								position: relative;
+							    margin: 0 auto !important;
+							    height: 200px;
+							    padding: 0;
+							    list-style: none;
+							    left: 14px;
+
+								li{
+									display: inline-block;
+								    width: 26%;
+								    float: left;
+								    margin: 0 auto;
+								    text-align: center;
+									a{
+										width: 150px;
+									    height: 130px;
+									    overflow: hidden;
+									    padding: 0;
+									    margin: 0 8px;
+									    text-align: center;
+										img{
+											width: 80%;
+										    height: auto;
+										    margin: 10px auto;
+
+										    -webkit-backface-visibility: visible !important;
+											backface-visibility: visible !important;
+											-webkit-animation-name: flipInY;
+											animation-name: flipInY;
+											-webkit-animation-duration: 1s;
+											animation-duration: 1s;
+											-webkit-animation-fill-mode: both;
+											animation-fill-mode: both;
+										}
+									}
+								}
+							}
+						}
+					}
+				}	
+			}
+			.info-prod{
+				h1{
+					font-family: 'NescafeSans-Bold';
+					font-size: 15pt;
+					color: $red;
+				}
+				.stars{
+					display: inline-flex;
+				    float: right;
+				    position: absolute;
+				    left: 160px;
+				    top: 10px;
+				    background: url(../../../../media/stars.svg) no-repeat 35% 50%;
+				    width: 100%;
+				    height: 28px;
+				    color: transparent;
+				}
+				.description{
+					color: #737373;
+					width: 60%;
+					font-size: 10pt;
+
+				}
+				.sku{
+					float: right;
+				    position: relative;
+				    text-align: left;
+				    top: -30px;
+				    right: 140px;
+				    color: #737373;
+				}
+				.price{
+					list-style: none;
+					padding: 0px;
+					margin-left: -10px;
+					.old-price{
+						display: inline-block;
+						margin: 0 12px;
+    					font-size: 14pt;
+    					color: #737373;
+    					text-decoration: line-through;
+
+					}
+					.new-price{
+						display: inline-block;
+						margin: 0 12px;
+    					font-size: 14pt;
+    					color: $red;
+    					font-weight: 500;
+
+					}
+				}
+				.stock{
+					color: #00913d;
+				}
+
+				.action-product{
+					border: 1px solid;
+				    border-color: #e1261c;
+				    height: 28px;
+				    line-height: 23px;
+				    border-radius: 3px;
+				    text-align: center;
+				    padding: 0 12px;
+				    color: #000;
+				    width: 22%;
+
+				#spinner{
+					width: 60%;
+				    border: none;
+				    height: 26px;
+				    outline: none;
+				    border-right: 1px solid;
+				    border-left: 1px solid;
+				    border-color: #e1261c;
+				    text-align: center;
+				    font-size: 18px;
+				    vertical-align: top;
+				    right: 6px;
+				    position: relative;
+				}
+				.ui-spinner-button{
+					span{
+						display: none;
+					}
+				}
+				.ui-spinner-down{
+					width: 25%;
+				    text-decoration: none;
+				    cursor: pointer;
+				    float: left;
+				    right: 8px;
+    				position: relative;
+					&:before{
+						content:'-';
+						font-size: 22px;
+						color: #000;
+					}
+					&:hover{
+						text-decoration: none;
+					}
+				}
+				.ui-spinner-up{
+					left: 3px;
+    				position: relative;
+					float: right;
+				    padding: 0;
+				    height: 28px;
+
+					&:before{
+						font-size: 22px;
+						content:'+';
+						color: #000;
+					}
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+
+				button{
+					@include button_red;
+						position: relative;
+					    top: 1px;
+					    right: 120px;
+					    float: right;
+				}
+				hr{
+					border-top: 1px solid #bfbfbf;
+					width: 85%;
+				    float: left;
+				    clear: both;
+				}
+				.more{
+					h3{
+						font-size: 12pt;
+						font-weight: 500;
+
+						color: #737373;
+
+					}
+					.fisrt, .second{
+						font-size: 9pt;
+						color: #737373;
+					}
+				}
+			}
+			.more-prod{
+				position: relative;
+    			top: -40px;
+				.tab {
+				    overflow: hidden;
+				    border: 1px solid #ccc;
+				    border-bottom: none;
+				    width: 54%;
+				    a {
+					    float: left;
+					    display: block;
+					    color: black;
+					    text-align: center;
+					    padding: 14px 16px;
+					    text-decoration: none;
+					    transition: 0.3s;
+					    font-size: 15px;
+					    width: 33.2%;
+					}
+					.tablinks-3{
+						float: right;
+					}
+					.active{
+						background: #000;
+						color: #fff;
+
+						&:after{
+							content: '';
+							background: url(../../../../media/arrow-info.svg) no-repeat 50% 50%;
+							top: 48px;
+						    position: absolute;
+						    margin:0 6.5%;
+						    width: 14px;
+						    height: 14px;
+						    display: block;
+						    text-align: center;
+						    justify-content: center;
+						}
+					}
+				}
+				#Caracteristicas, #Calificaciones, #Especificaciones{
+					h3{
+						font-family: NescafeSans-Bold;
+						color: $red;
+						margin-left: 10px;
+						font-size: 14pt;
+					}
+					p{
+						margin-left: 10px;
+					}
+
+				}
+				.feacture{
+					display: inline-block;
+					ul{
+						list-style: none;
+					    float: left;
+					    width: 50%;
+						li{
+
+						}
+					}
+				}
+				.content-ratings{
+					display: inline-block;
+					.ratings{
+					    list-style: none;
+					    width: 50%;
+    					float: left;
+						li{
+						width: 50%;
+							span{
+								background: url(../../../../media/stars.svg) no-repeat 50% 50%;
+							    float: left;
+							    position: absolute;
+							    left: 146px;
+							    width: 80px;
+							    height: 28px;
+							    color: transparent;
+
+							}
+						}
+					}
+					.comments{
+					    list-style: none;
+					    width: 50%;
+    					float: left;
+						li{
+
+						}
+					}
+				}
+				.tabcontent {
+
+					height: auto;
+    				clear: both;
+				    display: none;
+				    padding: 6px 12px;
+				    border: 1px solid #ccc;
+				}
+				.content-2 {
+				    display: block;
+				}
+				.content-3{
+					border-right: 1px solid #ccc;
+					border-left: 1px solid #ccc;
+
+				}
+			}
+			#slider-prod{
+				h1{
+					font-size: 12pt;
+				    text-align: center;
+				    background: #fff;
+				    height: 21px;
+				    width: 20%;
+				    top: 31px;
+				    position: relative;
+				    z-index: 999;
+				    margin: 0 auto;
+				}
+				hr{
+					border: 1px solid #e1261c;
+    				width: 50%;				
+				}
+
+				#slider-cont{
+					margin: 0 auto;
+    				width: 100%;
+    				margin-bottom: 50px;
+    				#slider{
+    					width: 100% !important;
+    					#products{
+    						width: 100% !important;
+    						height: 250px !important;
+    						position: relative;
+						    overflow: hidden;
+						    margin: 20px auto 0 auto;
+						    border-radius: 4px;
+
+    						.arrow-right{
+								width: 60px;
+							    height: 60px;
+							    background: url(../../../../media/arrow-left.svg) no-repeat 50% 50%;
+							    color: transparent;
+							    top: 140px;
+							    left: -16px;
+							    background-size: 70%;
+							    position: absolute;
+							    z-index: 999;
+
+							}
+							.arrow-left{
+								width: 60px;
+							    height: 60px;
+							    background: url(../../../../media/arrow-right.svg) no-repeat 50% 50%;
+							    color: transparent;
+							    background-size: 70%;
+							    position: relative;
+							    top: 130px;
+    							left: 0;
+    							z-index: 999;
+							    float: right;
+							}
+							ul{
+								width: 100% !important;
+								position: relative;
+								margin: 0 auto !important;
+							    padding: 0;
+							    height: 200px;
+							    list-style: none;
+							    padding: 0;
+							    list-style: none;
+							    left: 22px;
+								li{
+									display: inline-block;
+									width: 23%;
+									float: left;
+									margin: 0 auto;
+			    					text-align: center;
+			    					.thumb-link{
+											width: 150px;
+										    height: 130px;
+										    overflow: hidden;
+										    padding: 0;
+										    margin: 0 8px;
+										    text-align: center;
+
+										    img{
+										    	width: 50%;
+											    height: auto;
+											    margin: 10px auto;
+											    
+											    -webkit-backface-visibility: visible !important;
+												backface-visibility: visible !important;
+												-webkit-animation-name: flipInY;
+												animation-name: flipInY;
+												-webkit-animation-duration: 1s;
+												animation-duration: 1s;
+												-webkit-animation-fill-mode: both;
+												animation-fill-mode: both;
+											    }
+											}
+											button{
+												@include button_red;
+												left: 18px;
+				    							position: relative;
+											}
+											.name-prod{
+												text-align: center;
+											    left: -7px;
+											    position: relative;
+											    font-family: 'NescafeSans-Bold';
+											    font-size: 10pt; 
+											}
+											.price-prod{
+												font-weight: 500;
+												color: #737373;
+											}
+											.wish{
+												width: 24px;
+											    height: 25px;
+											    background: url(../../../../media/wish.svg) no-repeat 50% 50%;
+											    position: relative;
+											    float: left;
+											    top: 0px;
+				    							left: 28px;
+				    							cursor: pointer;
+				    							z-index: 999;
+				    							&:hover{
+				    								width: 24px;
+												    height: 25px;
+												    background: url(../../../../media/wish-hover.svg) no-repeat 50% 50%;
+												    position: relative;
+												    float: left;
+												    top: 0px;
+					    							left: 28px;
+					    							cursor: pointer;
+					    							z-index: 999;
+				    							}
+
+											}
+											.compare{
+
+												width: 25px;
+											    height: 25px;
+											    background: url(../../../../media/compare.svg) no-repeat 50% 50%;
+											    position: relative;
+											    float: right;
+											    top: -58px;
+    											right: 15px;
+    											cursor: pointer;
+    											&:hover{
+    												width: 25px;
+												    height: 25px;
+												    background: url(../../../../media/compare-hover.svg) no-repeat 50% 50%;
+												    position: relative;
+												    float: right;
+												    top: -58px;
+	    											right: 15px;
+	    											cursor: pointer;
+
+    										}
+										}
+									}
+								}
+    						}
+    					}
+					}
+				}
+			}
+		}
+	}

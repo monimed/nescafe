@@ -1,0 +1,444 @@
+<script type="text/javascript">
+    dashInit();
+</script>
+<!--Banner-->
+<div class="banner">
+    <div>
+        <p class="red animated slideInDown">- Hola Luis -</p>
+        <p class="animated fadeInLeft">Te ofrecemos una <span class="red">solución especial</span> para las salas de reunión</p>
+    </div>
+    <img src="bootstrap/assets/images/dashboard/banner.jpg" alt="Banner" class="banner">
+</div>
+<div class="container">
+    <section class="dashboard">
+
+        <!-- COMPARADOR -->
+
+        <div class="solutionsTop">
+        <div class="titleSolution">
+                <i class="glyphicon glyphicon-record" aria-hidden="true"></i>
+                <p>SALAS DE REUNIÓN</p>
+            </div>
+            <div class="col-xs-3 facts">
+                <div class="producto"></div>
+                <div class="gradientDiv"></div>
+                <table>
+                    <tr>
+                        <th>Costo por taza</th>
+                    </tr>
+                    <tr>
+                        <th class="white-back">Preparación</th>
+                    </tr>
+                    <tr>
+                        <th>Tipo de bebida</th>
+                    </tr>
+                    <tr>
+                        <th class="white-back">Variedades</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-xs-3 border-hover" id="selectProd">
+                <div id="solucionSelected">
+                    <i class="glyphicon glyphicon-ok" aria-hidden="true"></i>
+                </div>
+                <div class="producto animated fadeInUp">
+                    <div class="logo">
+                        <img src="bootstrap/assets/images/solucion/logo-dolce.png">
+                    </div>
+                    <img src="bootstrap/assets/images/solucion/producto-dolce-3.jpg">
+
+                </div>
+                <table>
+                    <tr>
+                        <th>$8.00 - $16.00</th>
+                    </tr>
+                    <tr>
+                        <th class="white-back">Cápsulas</th>
+                    </tr>
+                    <tr>
+                        <th>Café, té y chocolate</th>
+                    </tr>
+                    <tr>
+                        <th class="white-back">
+                            <div></div>
+                            <a id="cap-dashboard" href="#">24</a>
+                        </th>
+                    </tr>
+                </table>
+
+                <div class="overlay-prod over-dolce-3"></div>
+                <div id="variedades-dash">
+                    <a href="#">
+                        <img src="bootstrap/assets/images/solucion/capsulas.jpg">
+                    </a>
+
+                </div>
+                <div class="gradientDiv"></div>
+            </div>
+
+            <div class="col-xs-3 border-hover">
+                <div class="producto animated fadeInUp">
+                    <div class="logo">
+                        <img src="bootstrap/assets/images/solucion/logo-nescafe.jpg">
+                    </div>
+                    <img src="bootstrap/assets/images/solucion/producto-stick.jpg">
+
+                </div>
+                <table>
+                    <tr>
+                        <th>$ 1.30</th>
+                    </tr>
+                    <tr>
+                        <th class="white-back">Soluble</th>
+                    </tr>
+                    <tr>
+                        <th>Café</th>
+                    </tr>
+                    <tr>
+                        <th class="white-back">
+                            <a href="#">2</a>
+                        </th>
+                    </tr>
+                </table>
+
+                <div class="overlay-prod over-stick"></div>
+                <div class="gradientDiv"></div>
+            </div>
+
+            <div class="col-xs-3 border-hover">
+                <div class="producto animated fadeInUp">
+                    <div class="gradientDiv"></div>
+                    <div class="logo">
+                        <img src="bootstrap/assets/images/solucion/logo-tasters.jpg">
+                    </div>
+                    <img src="bootstrap/assets/images/solucion/producto-tasters.jpg">
+
+                </div>
+                <table>
+                    <tr>
+                        <th>$ 1.00 - $ 2.00</th>
+                    </tr>
+                    <tr>
+                        <th class="white-back">Soluble</th>
+                    </tr>
+                    <tr>
+                        <th>Café</th>
+                    </tr>
+                    <tr>
+                        <th class="white-back">
+                            <a href=#"">5</a>
+                        </th>
+                    </tr>
+                </table>
+
+                <div class="overlay-prod over-taster"></div>
+            </div>
+        </div>
+        <div class="toolNav toolRight col-xs-12">
+            <p>Ver más opciones</p>
+            <i class="glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+        </div>
+        <div class="gradientDiv2"></div>
+
+        <div class="container wow fadeInUp">
+            <!--Dashboard-->
+            <div class="dash-container">
+                <div class="pedidos">
+                    <a href="#">
+                        <img src="bootstrap/assets/images/dashboard/pedidos-active.png" alt="Banner" class="banner">
+                        <span>Últimos pedidos</span>
+                    </a>
+                </div>
+                <div class="credito">
+                    <button type="button" class="change-section btn-credit" section="credito.html" onclick="scrollCredit();">
+                        <img src="bootstrap/assets/images/dashboard/credito.png" alt="Banner" class="banner">
+                        <span>Crédito disponibles</span>
+                    </button>
+                </div>
+                <div class="suscripcion">
+                    <a href="#">
+                        <img src="bootstrap/assets/images/dashboard/suscripciones.png" alt="Banner" class="banner">
+                        <span>Plan de suscripción</span>
+                    </a>
+                </div>
+                <div class="factura">
+                    <a href="#">
+                        <img src="bootstrap/assets/images/dashboard/factura.png" alt="Banner" class="banner">
+                        <span>Factura</span>
+                    </a>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <!-- SECCIÓN DE RECOMPRA -->
+        <div class="page-title-second">
+            <span>
+                <p>Recompra</p>
+            </span>
+            <div class="red-line"></div>
+        </div>
+        <!-- TABS DE SOLUCIONES -->
+        <div id="tabsDash">
+            <div class="header-options">
+                <ul class="options">
+                    <li class="active">
+                        <a href="#tabs-1">Habitación</a>
+                    </li>
+                    <li>
+                        <a href="#tabs-2">Restaurante</a>
+                    </li>
+
+                </ul>
+                <div class="gradientDiv2"></div>
+            </div>
+
+            <div id="tabs-1">
+                <!-- PRODUCTOS 2 -->
+                <div class="col-sm-6 productDash">
+                    <div class="product" id="1000131805">
+                        <div class="picture col-xs-4 animated flipInY">
+                            <img src="bootstrap/assets/images/solucion/1000131805.jpg">
+                        </div>
+                        <div class="product-info col-xs-4">
+                            <div class="sku-product">SKU. 1000131805</div>
+                            <div class="name-product">CAFÉ AMERICANO</div>
+                            <div class="price-product">
+                                <span>$140.00</span>
+                                <p>$124.00</p>
+                            </div>
+                        </div>
+                        <div class="action-product col-xs-2">
+                            <input name="value" class="spinner" value="50">
+                            <div class="btn-extras">
+                                <div class="icon wishlist left">
+                                    <i class="glyphicon-heart-empty" aria-hidden="true"></i>
+                                </div>
+                                <div class="icon compare right">
+                                    <i class="glyphicon-stats" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                        </div> 
+                    </div>
+                    <div class="product" id="1000154731">
+                        <div class="picture col-xs-4 animated flipInY">
+                            <img src="bootstrap/assets/images/solucion/1000154731.jpg">
+                        </div>
+                        <div class="product-info col-xs-4">
+                            <div class="sku-product">SKU. 1000154731
+                            </div>
+                            <div class="name-product">ESPRESSO 30 PACK</div>
+                            <div class="price-product">
+                                <p>$185.50</p>
+                            </div>
+                        </div>
+                        <div class="action-product col-xs-2">
+                            <input name="value" class="spinner" value="200">
+                            <div class="btn-extras">
+                                <div class="icon wishlist left">
+                                    <i class="glyphicon-heart-empty" aria-hidden="true"></i>
+                                </div>
+                                <div class="icon compare right">
+                                    <i class="glyphicon-stats" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                        </div> 
+                    </div>
+
+                </div>
+
+                <!-- PRODUCTOS 1 -->
+                <div class="col-sm-6 productDash">
+                    <div class="product" id="140757">
+                        <div class="picture col-xs-4 animated flipInY">
+                            <img src="bootstrap/assets/images/solucion/140757.jpg">
+                        </div>
+                        <div class="product-info col-xs-4">
+                            <div class="sku-product">SKU. 140757</div>
+                            <div class="name-product">ECLIPSE TITANIUM</div>
+                            <div class="price-product">
+                                <p>$3,230.00</p>
+                            </div>
+                        </div>
+                        <div class="action-product col-xs-2">
+                            <input name="value" class="spinner" value="50">
+ <div class="btn-extras">
+                                <div class="icon wishlist left">
+                                    <i class="glyphicon-heart-empty" aria-hidden="true"></i>
+                                </div>
+                                <div class="icon compare right">
+                                    <i class="glyphicon-stats" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product" id="1000024568">
+                        <div class="picture col-xs-4 animated flipInY">
+                            <img src="bootstrap/assets/images/solucion/1000024568.jpg">
+                        </div>
+                        <div class="product-info col-xs-4">
+                            <div class="sku-product">SKU. 1000024568</div>
+                            <div class="name-product">LATTE MACCHIATO</div>
+                            <div class="price-product">
+                                <p>$129.00</p>
+                            </div>
+                        </div>
+                        <div class="action-product col-xs-2">
+                            <input name="value" class="spinner" value="200">
+                            <div class="btn-extras">
+                                <div class="icon wishlist left">
+                                    <i class="glyphicon-heart-empty" aria-hidden="true"></i>
+                                </div>
+                                <div class="icon compare right">
+                                    <i class="glyphicon-stats" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                        </div> 
+                    </div>
+                </div>
+
+            </div>
+            <div id="tabs-2">
+                <!-- PRODUCTOS 2 -->
+                <div class="col-sm-6 productDash">
+                  
+                <div class="product" id="140749">
+                    <div class="picture col-xs-4 animated flipInY">
+                        <img src="bootstrap/assets/images/solucion/140749.jpg">
+                    </div>
+                    <div class="product-info col-xs-4">
+                        <div class="sku-product">SKU. 140749
+                        </div>
+                        <div class="name-product">NESCAFÉ MILANO ESPRESSO</div>
+                        <div class="price-product">
+                            <p>$185.50</p>
+                        </div>
+                    </div>
+                      <div class="action-product col-xs-2">
+                            <input name="value" class="spinner" value="200">
+                            <div class="btn-extras">
+                                <div class="icon wishlist left">
+                                    <i class="glyphicon-heart-empty" aria-hidden="true"></i>
+                                </div>
+                                <div class="icon compare right">
+                                    <i class="glyphicon-stats" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+                <!-- PRODUCTO 1 -->
+                <div class="product" id="140746">
+                    <div class="picture col-xs-4 animated flipInY">
+                        <img src="bootstrap/assets/images/solucion/140746.jpg">
+                    </div>
+                    <div class="product-info col-xs-4">
+                        <div class="sku-product">SKU. 140746</div>
+                        <div class="name-product">NESCAFÉ MILANO</div>
+                        <div class="price-product">
+                            <span>$0,000.00</span>
+                            <p>$0,000.00</p>
+                        </div>
+                    </div>
+                    <div class="action-product col-xs-2">
+                        <input name="value" class="spinner" value="50">
+                        <div class="btn-extras">
+                            <div class="icon wishlist left">
+                                <i class="glyphicon-heart-empty" aria-hidden="true"></i>
+                            </div>
+                            <div class="icon compare right">
+                                <i class="glyphicon-stats" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        </div>  
+                </div>
+
+            </div>
+
+            <!-- PRODUCTOS 1 -->
+            <div class="col-sm-6 productDash">
+              
+            <!-- PRODUCTO 4 -->
+
+            <div class="product" id="140747">
+                <div class="picture col-xs-4 animated flipInY">
+                    <img src="bootstrap/assets/images/solucion/140747.jpg">
+                </div>
+               <div class="product-info col-xs-4">
+                            <div class="sku-product">SKU. 140747</div>
+                            <div class="name-product">TAZA NESCAFÉ MILANO</div>
+                            <div class="price-product">
+                                <span>$140.00</span>
+                                <p>$124.00</p>
+                            </div>
+                        </div>
+                <div class="action-product col-xs-2">
+                    <input name="value" class="spinner" value="200">
+                    <div class="btn-extras">
+                        <div class="icon wishlist left">
+                            <i class="glyphicon-heart-empty" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon compare right">
+                            <i class="glyphicon-stats" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div>  
+            </div>
+            <!-- PRODUCTO 4 -->
+
+            <div class="product" id="140748">
+                <div class="picture col-xs-4 animated flipInY">
+                    <img src="bootstrap/assets/images/solucion/140748.jpg">
+                </div>
+                <div class="product-info col-xs-4">
+                    <div class="sku-product">SKU. 140748</div>
+                    <div class="name-product">TAZA NESCAFÉ MILANO</div>
+                    <div class="price-product">
+                        <p>$129.00</p>
+                    </div>
+                </div>
+                <div class="action-product col-xs-2">
+                    <input name="value" class="spinner" value="200">
+                    <div class="btn-extras">
+                        <div class="icon wishlist left">
+                            <i class="glyphicon-heart-empty" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon compare right">
+                            <i class="glyphicon-stats" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div>  
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="toolCenter">
+    <button type="button" class="btn btn-red change-section" section="detalledecarrito.html" onclick="scrollSolution();">
+        Repetir pedido
+    </button>
+</div>
+
+</div>
+
+</section>
+</div>
+<script type="text/javascript">
+    function scrollUltimo(){
+    $("html, body").animate({ scrollTop: 950 }, "slow");
+}
+    function scrollSolution(){
+        $("html, body").animate({ scrollTop: 200 }, "slow");
+    }
+    function scrollCredit(){
+        $("html, body").animate({ scrollTop: 320 }, "slow");
+    }
+</script>
+<!--FIN DE SECCION 

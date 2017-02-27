@@ -1,0 +1,357 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8"/>   
+  <title>Nestlé - Demo</title>
+  <link rel=stylesheet href="bootstrap/assets/stylesheets/css/styles.css" type="text/css"/>
+  <link rel=stylesheet href="bootstrap/assets/stylesheets/bootstrap.css" type="text/css"/>
+  <link rel=stylesheet href="css/normalize.css" type="text/css"/>
+  <link rel=stylesheet href="css/animate.css" type="text/css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="bootstrap/assets/images/home/favicon.ico">
+</head>
+
+<body>
+
+ <header>
+  <div class="w100 header1">
+    <div class="container">
+      <div class="col-sm-9">
+        <ul>
+          <li><a class="enlace" href="#">Contacto</a></li>
+          <li><a class="enlace" href="#">Chat online</a></li>
+          <li><a class="enlace" href="tel:#">Llámanos: 01800 0164500</a></li>
+
+        </ul>
+      </div>
+      <div id="loginDrop" class=" login slideOutUp">
+        <div>
+          <input type="text" placeholder="Usuario">
+          <span class="glyphicon glyphicon-user"></span>
+        </div>
+        <div> 
+          <input type="password" placeholder="Contraseña">
+          <span class="glyphicon glyphicon-pencil"></span>
+        </div>
+        <center><button class="submit" onclick="loggedIn()">Ingresar</center>
+        <center><a href="#" class="enlace">¿Olvidaste tu contraseña?</a></center>
+      </div>
+      <div id="loggedDrop" class="login slideOutUp" style="display: none;">
+        <ul>
+          <li><a href="#" class="change-section" section="dashboard.html">Mi cuenta</a></li>
+          <li><a >Mis Pedidos</a></li>
+          <li><a >Favs</a></li>
+        </ul>
+        <center><a href="#" class="enlace" onclick="loggedOut()">Salir</a></center>
+      </div>
+      <div class="col-sm-3 register">
+        <span class="dropdown">
+          <a id="loginLink" class="dropdown-toggle" href="#" >Ingresar<span class="glyphicon glyphicon-play"></span></a>
+          <a id="loggedSpan" style="display: none;" href="#" class="new-user enlace_bco">Bienvenido Luis</a>
+        </span>
+        <span>
+          <a id="loginSpan" href="#" class="new-user enlace_bco">Regístate</a>
+          <a id="loggedLink" href="#" class="dropdown-toggle" style="display: none;">Mi cuenta<span class="glyphicon glyphicon-play"></span></a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="w100 header2">
+    <div class="container">
+      <div class="col-sm-12">
+        <ul>
+          <li class="logoNes">
+            <span class="logo-acent animated fadeInDown"></span><a href="index.html"><h1 class="animated fadeInLeft">Nescafé</h1>
+          </a></li>
+          <li>
+            <form class="relative search-block">
+              <ul id="resultsContent" class="results fadeOutUp">
+                <li class="change-section" section="detalledeproducto.html" onclick='$("html, body").animate({ scrollTop:0 }, 500);' style="cursor: pointer;">
+                  <a href="#">
+                    <img src="bootstrap/assets/images/solucion/140757.jpg">
+                    <div class="data">
+                      <div class="name">ECLIPSE TITANIUM</div>
+                      <span class="sku">SKU. 140757</span>
+                      <span class="price">$3,230.00</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="bootstrap/assets/images/solucion/1000131805.jpg">
+                    <div class="data">
+                      <div class="name">CAFÉ AMERICANO</div>
+                      <span class="sku">SKU. 1000131805</span>
+                      <span class="price">$124.00</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="bootstrap/assets/images/solucion/producto-stick.jpg">
+                    <div class="data">
+                      <div class="name">NESCAFÉ CLÁSICO STICKS</div>
+                      <span class="sku">SKU. 1000024568</span>
+                      <span class="price">$1.30</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="bootstrap/assets/images/solucion/140757.jpg">
+                    <div class="data">
+                      <div class="name">ECLIPSE TITANIUM</div>
+                      <span class="sku">SKU. 140757</span>
+                      <span class="price">$3,230.00</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="bootstrap/assets/images/solucion/1000131805.jpg">
+                    <div class="data">
+                      <div class="name">CAFÉ AMERICANO</div>
+                      <span class="sku">SKU. 1000131805</span>
+                      <span class="price">$124.00</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <input id="searchText" class="search" type="search" placeholder="Buscar" autosave="a_unique_value"  autocomplete="off">
+              <span class="glyphicon glyphicon-search"></span></a>
+              <input class="search-submit" type="submit" value="">
+            </form>
+          </li>
+          <li class="cart-small change-section" section="detalledecarrito.html">
+            <a href="#" class="carrito animated change-section">Carrito</a>
+            <span class="iconCart animated bounceIn"></span>
+            <span href="#" id="cart-qty"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="w100 header3">
+      <div class="container">
+        <div class="col-sm-12">
+          <ul class="menu">
+            <li class="dropdown">
+              <a class="dropbtn" href="#">Solución para mi negocio<span class="glyphicon glyphicon-play"></span></a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="#">Hoteles</a>
+                  <ul class="second-level">
+                    <li>
+                      <form>
+                        <div>
+                        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
+                        <label for="checkbox-1-1">Habitación</label>
+                        
+                        </div>
+                        <div>
+                          <input type="checkbox" id="checkbox-1-2" class="regular-checkbox" />
+                          <label for="checkbox-1-2">Restaurante</label>
+                          
+                          
+                        </div>
+                        <div>
+                          <input type="checkbox" id="checkbox-1-3" class="regular-checkbox" />
+                          <label for="checkbox-1-3">Sala de juntas</label>
+                          
+                          
+                        </div>
+                        <div>
+                          <input type="checkbox" id="checkbox-1-4" class="regular-checkbox" />
+                          <label for="checkbox-1-4">Alberca</label>
+                          
+                          
+                        </div>
+                        <div>
+                          <input type="checkbox" id="checkbox-1-5" class="regular-checkbox" />
+                          <label for="checkbox-1-5">Bar</label>
+                          
+                          
+                        </div>
+                        <div>
+                          <input type="checkbox" id="checkbox-1-6" class="regular-checkbox" />
+                          <label for="checkbox-1-6">Comedor de empleados</label>
+                          
+                          
+                        </div>
+                        <div>
+                          <input type="checkbox" id="checkbox-1-7" class="regular-checkbox" />
+                          <label for="checkbox-1-7">Oficinas</label>
+                          
+                          
+                        </div>
+                        <div class="button_red_check">
+                          <button type="button" class="btn change-section" section="solucion.html" onclick='$("html, body").animate({ scrollTop:200}, 500);'><span>Continuar</span></button>
+                        </div>
+                      </form>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">Oficinas</a></li>
+                <li><a href="#">Centros de estudios</a></li>
+                <li><a href="#">Bares | Café</a></li>
+                <li><a href="#">Tiendas de convenencia</a></li>
+                <li><a href="#">SPA's</a></li>
+                <li><a href="#">Entretenimiento</a></li>
+                <li><a href="#">Travel</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="#">Promociones<span class="glyphicon glyphicon-play"></span></a>
+              <ul class="dropdown-content">
+                <li><div class="change-section" section="catalogo.html">catalogo</div></li>
+                <li><div class="change-section" section="checkout.html">checkout</div></li>
+                <li><div class="change-section" section="detalledeproducto.html">detalle</div></li>
+                <li><div class="change-section" section="home.html">home</div></li>
+                <li><div class="change-section" section="solucion.html">solucion</div></li>
+                <li><div class="change-section" section="detalledecarrito.html">carrito</div></li>
+                <li><div class="change-section" section="dashboard.html">dashboard</div></li>
+                <li><div class="change-section" section="credito.html">credito</div></li>
+                <li><div class="change-section" section="maquinas.html">maquinas</div></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="javascript:void(0)"  >Catálogo<span class="glyphicon glyphicon-play"></span></a>
+              <ul class="dropdown-content">
+                <li><div class="change-section" section="maquinas.html">Máquinas</div></li>
+                <li><a href="#">Café</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Servicios</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>  
+
+  </header>
+
+
+  <!--INICIO DE SECCION -->
+  <section id="main-section-placeholder">
+    
+  </section>
+  <!--FIN DE SECCION -->
+
+  <footer>
+    <div class="w100">
+      <div class="container promo"> 
+       <div class="col-sm-12">
+        <div class="promo1"></div>
+        <div class="promo2">
+          <form action="" id="newsletter">
+            <input type="text" placeholder="Ingresa tu correo">
+            <button class="button-news" type="button">SUSCRIBIR</button>
+          </form>
+        </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="w100">
+    <div class="container">
+      <div class="col-sm-12 brands">
+        <ul class="float">
+          <li class="col-md-3"><img src="bootstrap/assets/images/home/nescafe-logo.png" /></li>
+          <li class="col-md-3 bar fix-logo"><img src="bootstrap/assets/images/footer/dolce.png" /></li>
+          <li class="col-md-3 bar fix-logo"><img src="bootstrap/assets/images/footer/alegria.png" /></li>
+          <li class="col-md-3 bar"><img src="bootstrap/assets/images/footer/milano.png" /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="w100 enlaces">
+    <div class="container">
+      <div class="col-sm-12 links">
+        <ul class="float">
+          <li class="col-sm-3">
+            <ul class="linktran">
+              <li><a>Preguntas frecuentes</a></li>
+              <li><a>Aviso de privacidad</a></li>
+              <li><a>Politicas de cookies</a></li>
+              <li><a>Términos y condiciones</a></li>
+            </ul>
+          </li>
+          <li class="col-sm-3">
+            <ul class="linktran">
+              <li><a>Mantenimiento</a></li>
+              <li><a>Cápsulas</a></li>
+              <li><a>Accesorios</a></li>
+            </ul>
+          </li>
+          <li class="col-sm-3 row3">
+            <ul class="linktran">
+              <li><a>Máquinas de café profesionales</a></li>
+              <li><a>Servicios profesionales</a></li>
+              <li><a>Productos profesionales</a></li>
+            </ul>
+          </li>
+          <li class="col-sm-3 social">
+            <ul class="col-sm-6">
+            <li><a href="#" class="visa">Visa</a></li>
+              <li><a href="#" class="paypal">Paypal</a></li>
+              
+              
+            </ul>
+            <ul class="col-sm-6">
+              <li><a href="#" class="tw">Facebook</a></li>
+              <li><a href="#" class="fb">Twitter</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="w100">
+    <div class="container">
+      <div class="col-sm-12 copyright">
+        <ul>
+          <li>Todos los derechos reservados Nestlé México ©</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="bootstrap/assets/javascripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vistas.js"></script>
+<script type="text/javascript" src="js/outsideEvents.js"></script>
+<script type="text/javascript" src="js/lib.js"></script>
+<script type="text/javascript" src="js/jquery.ajaxData.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script src="js/wow.min.js"></script>
+
+<script>
+
+  $('.check-active').click(function(){
+    if($(this).is(':checked')){
+      $(this).parent().addClass('menu-check-active');
+    }else{
+      $(this).parent().removeClass('menu-check-active');
+    }
+  });
+
+  new WOW().init();        
+
+</script>
+</body>
+
+</html>
