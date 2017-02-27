@@ -121,8 +121,7 @@
   #alert button {
     opacity: 100; }
 
-.home select-negocios-button
-.carousel-inner .item img {
+.home .carousel-inner .item img {
   width: 100%; }
 .home .page-title-second {
   font-family: 'NescafeSans-Bold', Arial;
@@ -262,6 +261,7 @@
     background-image: url("../../images/home/sprite2.png");
     width: 153px;
     height: 11px;
+    max-height: 9px;
     background-position: 0px 0px;
     display: block;
     background-repeat: no-repeat;
@@ -391,8 +391,8 @@
       background-image: url("../../images/home/sprite3.png");
       width: 101px;
       height: 76px;
-      background-size: 1200px;
-      background-position: -988px -63px;
+      background-size: 1100px;
+      background-position: -901px -57px;
       margin-left: 25px; }
     .home .checkbox-label:active span.Travel, .home .checkbox-label.ui-checkboxradio-checked span.Travel {
       background-image: url("../../images/home/sprite3.png");
@@ -418,39 +418,47 @@
     background-repeat: no-repeat; }
   .home .checkbox-label span.room {
     background-image: url("../../images/home/sprite.png");
-    background-position: 17px 13px; }
+    background-position: 17px 13px;
+    opacity: .7; }
   .home .checkbox-label span.restaurant {
     background-image: url("../../images/home/sprite.png");
-    background-position: -109px 7px; }
+    background-position: -109px 7px;
+    opacity: .7; }
   .home .checkbox-label span.meeting {
     background-image: url("../../images/home/sprite.png");
-    background-position: -232px 7px; }
+    background-position: -232px 7px;
+    opacity: .7; }
   .home .checkbox-label span.pool {
     background-image: url("../../images/home/sprite.png");
     background-size: 750px;
-    background-position: -328px 14px; }
+    background-position: -328px 14px;
+    opacity: .7; }
   .home .checkbox-label span.bar {
     background-image: url("../../images/home/sprite.png");
     background-size: 750px;
-    background-position: -442px 11px; }
+    background-position: -442px 11px;
+    opacity: .7; }
   .home .checkbox-label span.dining {
     background-image: url("../../images/home/sprite.png");
     width: 117px;
-    background-size: 700px;
-    background-position: -500px 16px; }
+    background-size: 600px;
+    background-position: -420px 22px;
+    opacity: .7; }
   .home .checkbox-label span.office {
     background-image: url("../../images/home/sprite.png");
     width: 104px;
-    background-size: 700px;
-    background-position: -613px 13px; }
+    background-size: 600px;
+    background-position: -518px 20px;
+    opacity: .7; }
   .home .checkbox-label span.Oficinas {
     background-image: url("../../images/home/sprite3.png");
     width: 101px;
     height: 66px;
     background-size: 1200px;
-    background-position: 9px 15px;
+    background-position: 9px 9px;
     margin-left: 25px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    opacity: .7; }
   .home .checkbox-label span.Hoteles {
     background-image: url("../../images/home/sprite3.png");
     width: 101px;
@@ -458,7 +466,8 @@
     background-size: 1200px;
     background-position: -110px 7px;
     margin-left: 25px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    opacity: .7; }
   .home .checkbox-label span.Restaurantes {
     background-image: url("../../images/home/sprite3.png");
     width: 101px;
@@ -466,7 +475,8 @@
     background-size: 1200px;
     background-position: -238px 4px;
     margin-left: 25px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    opacity: .7; }
   .home .checkbox-label span.Centros.educativos {
     background-image: url("../../images/home/sprite3.png");
     width: 101px;
@@ -474,7 +484,8 @@
     background-size: 1200px;
     background-position: -364px 5px;
     margin-left: 25px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    opacity: .7; }
   .home .checkbox-label span.Centros.de.salud {
     background-image: url("../../images/home/sprite3.png");
     width: 101px;
@@ -482,7 +493,8 @@
     background-size: 1200px;
     background-position: -481px 7px;
     margin-left: 25px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    opacity: .7; }
   .home .checkbox-label span.Bar {
     background-image: url("../../images/home/sprite3.png");
     width: 101px;
@@ -490,7 +502,8 @@
     background-size: 1200px;
     background-position: -611px 6px;
     margin-left: 25px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    opacity: .7; }
   .home .checkbox-label span.Tiendas.de.conveniencia {
     background-image: url("../../images/home/sprite3.png");
     width: 101px;
@@ -498,7 +511,8 @@
     background-size: 1100px;
     background-position: -665px 11px;
     margin-left: 25px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    opacity: .7; }
   .home .checkbox-label span.Spa {
     background-image: url("../../images/home/sprite3.png");
     width: 101px;
@@ -506,15 +520,17 @@
     background-size: 1200px;
     background-position: -863px 3px;
     margin-left: 25px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    opacity: .7; }
   .home .checkbox-label span.Entretenimiento {
     background-image: url("../../images/home/sprite3.png");
     width: 101px;
     height: 66px;
-    background-size: 1200px;
-    background-position: -988px 2px;
+    background-size: 1100px;
+    background-position: -901px 7px;
     margin-left: 25px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    opacity: .7; }
   .home .checkbox-label span.Travel {
     background-image: url("../../images/home/sprite3.png");
     width: 101px;
@@ -522,7 +538,8 @@
     background-size: 1200px;
     background-position: -1110px -3px;
     margin-left: 25px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    opacity: .7; }
 .home .checkbox {
   border: 0;
   clip: rect(0 0 0 0);
@@ -649,9 +666,10 @@ header .header1 {
   header .header1 a {
     color: white; }
   header .header1 ul {
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   header .header1 li {
-    margin-left: 2em;
+    margin-right: 4em;
     line-height: 35px; }
   header .header1 .register {
     background-color: #e1261c;
@@ -678,7 +696,8 @@ header .header1 {
 header .header2 {
   height: 100px; }
   header .header2 ul {
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   header .header2 h1 {
     background-image: url("../../images/home/nescafe-logo-1.png");
     background-size: contain;
@@ -817,8 +836,10 @@ header .header2 {
               color: #e1261c;
               float: left; }
             header .header2 .search-block .results li a div.data span.price {
-              float: right;
-              font-weight: bold; }
+              font-weight: bold;
+              display: block;
+              position: absolute;
+              left: 75%; }
       header .header2 .search-block .results li:hover {
         background-color: #f1f1f1; }
       header .header2 .search-block .results li:last-child {
@@ -898,7 +919,7 @@ header .header3 {
         display: inline-block;
         color: white;
         text-align: center;
-        padding: 14px 4em;
+        padding: 10px 3em;
         text-decoration: none; }
         header .header3 ul.menu li a span {
           -ms-transform: rotate(90deg) scale(0.8, 1);
@@ -941,7 +962,7 @@ header .header3 {
           text-decoration: none;
           display: block;
           text-align: left;
-          padding: 10px 4em; }
+          padding: 10px 1em; }
         header .header3 ul.menu .dropdown-content li .second-level {
           overflow: hidden;
           position: absolute;
@@ -1057,8 +1078,6 @@ header .header3 {
 
 .container {
   position: relative; }
-  .container .logoNes {
-    padding-left: 28px; }
   .container .register {
     z-index: 3; }
     .container .register span {
@@ -1779,6 +1798,9 @@ footer .copyright {
         transition: all 500ms ease;
         box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
         background: #e1261c; }
+      .tabSolucion .catalog .toolCenter .btn-black span, .tabSolucion .productDash .toolCenter .btn-black span, .dashboard .catalog .toolCenter .btn-black span, .dashboard .productDash .toolCenter .btn-black span {
+        font-size: 11px;
+        top: 0; }
     .tabSolucion .catalog .toolCenter .verMas, .tabSolucion .productDash .toolCenter .verMas, .dashboard .catalog .toolCenter .verMas, .dashboard .productDash .toolCenter .verMas {
       display: block;
       margin: 5% 0; }
@@ -1849,7 +1871,7 @@ footer .copyright {
         .tabSolucion .catalog .product .action-product .spinner, .tabSolucion .productDash .product .action-product .spinner, .dashboard .catalog .product .action-product .spinner, .dashboard .productDash .product .action-product .spinner {
           width: 50%;
           border: none;
-          height: 26px;
+          height: 25px;
           outline: none;
           border-right: 1px solid;
           border-left: 1px solid;
@@ -2006,7 +2028,7 @@ footer .copyright {
       right: 4px;
       z-index: -4; }
   .tabSolucion .col-sm-6, .dashboard .col-sm-6 {
-    margin: 0 0 5% 0; }
+    margin: 0 0 2% 0; }
 
 .dashboard .header-options .gradientDiv2 {
   margin-bottom: 0;
@@ -2299,11 +2321,30 @@ footer .copyright {
           .main-container .main .col-main ol li .panel-collapse .buttons-set .please-wait img {
             width: 4%; }
       .main-container .main .col-main ol li .panel-collapse .order-review h2 {
-        font-size: 25px; }
+        font-size: 20px; }
       .main-container .main .col-main ol li .panel-collapse .order-review h3 {
         color: #e1261c;
         font-family: 'NescafeSans-Bold';
         font-size: 14px; }
+      .main-container .main .col-main ol li .panel-collapse .order-review .table-total tfoot {
+        background: #fff !important;
+        border: 1px solid #e1261c;
+        float: right;
+        width: 43%;
+        padding: 0 6px; }
+        .main-container .main .col-main ol li .panel-collapse .order-review .table-total tfoot tr {
+          border-bottom: 1px solid #f2f2f2; }
+        .main-container .main .col-main ol li .panel-collapse .order-review .table-total tfoot .total-gral {
+          border-top: 1px solid #e1261c; }
+          .main-container .main .col-main ol li .panel-collapse .order-review .table-total tfoot .total-gral th {
+            font-weight: bold; }
+        .main-container .main .col-main ol li .panel-collapse .order-review .table-total tfoot th {
+          font-weight: normal; }
+        .main-container .main .col-main ol li .panel-collapse .order-review .table-total tfoot .item-option {
+          width: 40% !important; }
+        .main-container .main .col-main ol li .panel-collapse .order-review .table-total tfoot .price {
+          width: 55% !important;
+          color: #e1261c; }
       .main-container .main .col-main ol li .panel-collapse .order-review table thead {
         border-bottom: 2px solid #e1261c;
         border-top: 2px solid #e1261c; }
@@ -2343,8 +2384,10 @@ footer .copyright {
             border: none; }
           .main-container .main .col-main ol li .panel-collapse .order-review table tfoot tr .item-option {
             color: #e1261c; }
+      .main-container .main .col-main ol li .panel-collapse .order-review .links form li {
+        padding-left: 2%; }
       .main-container .main .col-main ol li .panel-collapse .order-review .links form .control .float-right {
-        float: right; }
+        padding-left: 57%; }
       .main-container .main .col-main ol li .panel-collapse .order-review .links form .control .glyphicon-refresh {
         color: #e1261c;
         display: block;
@@ -3376,6 +3419,107 @@ footer .copyright {
       margin-top: 5px; }
   .container .dash-container .pedidos .btn-credit, .container .dash-container .credito .btn-credit, .container .dash-container .suscripcion .btn-credit, .container .dash-container .factura .btn-credit {
     height: 77px; }
+
+#tabsDash .toolCenter div {
+  position: relative;
+  width: 225px;
+  padding: 0 5px;
+  line-height: 25px;
+  margin: 0 auto; }
+  #tabsDash .toolCenter div input {
+    display: none;
+    margin: 4px 0 0; }
+  #tabsDash .toolCenter div label:before {
+    content: ' ';
+    background-image: url("../../images/home/checkbox.png");
+    background-position: 1px -16px;
+    top: 13px;
+    right: 9px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 34px 33px; }
+  #tabsDash .toolCenter div label:after {
+    content: '\e030';
+    font-family: 'Glyphicons Halflings';
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+    color: red;
+    margin-left: 4px; }
+  #tabsDash .toolCenter div .regular-checkbox + label {
+    background-color: transparent;
+    padding: 9px 0 0 15px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10%; }
+  #tabsDash .toolCenter div .regular-checkbox + label:before {
+    content: ' ';
+    background-image: url("../../images/home/checkbox.png");
+    background-position: -19px 0px;
+    top: 15px;
+    left: 30px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 34px 33px; }
+  #tabsDash .toolCenter div .regular-checkbox:checked + label:before {
+    content: ' ';
+    background-image: url("../../images/home/checkbox.png");
+    background-position: 1px 0px;
+    top: 15px;
+    right: 9px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 34px 33px; }
+
+.dashboard .upload {
+  margin: 3% 0; }
+  .dashboard .upload form {
+    font-family: 'NescafeSans-Bold', Arial;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
+    border: 1px solid #d6d6d6;
+    box-shadow: inset 0 0 10px #d6d6d6;
+    -webkit-box-shadow: inset 0 0 10px #d6d6d6;
+    -moz-box-shadow: inset 0 0 10px #d6d6d6;
+    -ms-box-shadow: inset 0 0 10px #d6d6d6;
+    -o-box-shadow: inset 0 0 10px #d6d6d6; }
+    .dashboard .upload form .box__file {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1; }
+    .dashboard .upload form label strong {
+      color: #e1261c;
+      cursor: pointer;
+      text-decoration: underline; }
+    .dashboard .upload form p {
+      font-size: 14px;
+      color: #999; }
+      .dashboard .upload form p:after {
+        content: '\e027';
+        font-family: 'Glyphicons Halflings';
+        display: block;
+        text-decoration: none;
+        font-size: 40px;
+        color: #c2c2c2; }
+    .dashboard .upload form .box__uploading, .dashboard .upload form .box__success, .dashboard .upload form .box__error {
+      display: none; }
 
 .banner {
   margin-bottom: 1%; }

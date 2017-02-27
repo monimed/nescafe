@@ -909,7 +909,10 @@ function catalogoInit(){
     $("#accordion").accordion();
     $("#accordionRes").accordion();
     // SLIDE NUM DE HABITACIONES
-    $(".slider").slider();
+ $(".slider").slider({
+        min: 1,
+        max: 200,
+    });
     var handle = $("#custom-handle");
     $(".slider").slider({
         create: function () {
