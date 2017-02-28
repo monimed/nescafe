@@ -530,6 +530,10 @@ $red-nescafe: #e1261c;
 					box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
 					background:$red-nescafe;
 				}
+				span {
+					font-size:11px;
+					top:0;
+				}
 			}
 			.verMas{
 				display: block;
@@ -624,7 +628,7 @@ $red-nescafe: #e1261c;
 					.spinner{
 						width: 50%;
 						border:none;
-						height: 26px;
+						height: 25px;
 						outline: none;
 						border-right:1px solid;
 						border-left:1px solid;
@@ -843,7 +847,7 @@ $red-nescafe: #e1261c;
 			}
 			/*DASHBOARD*/
 			.col-sm-6{
-				margin: 0 0 5% 0;
+				margin: 0 0 2% 0;
 			}
 		}
 		.dashboard{

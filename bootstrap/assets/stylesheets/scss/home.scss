@@ -1,7 +1,7 @@
 
 .home{
 
-	select-negocios-button
+	
 	.carousel-inner{
 		.item{
 			img{
@@ -155,6 +155,7 @@
 			background-image: url('../../images/home/sprite2.png');
 		    width: 153px;
 		    height: 11px;
+		    max-height: 9px;
 		    background-position: 0px 0px;
 		    display: block;
 		    background-repeat: no-repeat;
@@ -303,8 +304,8 @@
 		    	background-image: url('../../images/home/sprite3.png');
 	        width: 101px;
 		    height: 76px;
-		    background-size: 1200px;
-	        background-position:-988px -63px;
+		    background-size: 1100px;
+	        background-position:-901px -57px;
 		    margin-left: 25px;
 		    } 
 		    & span.Travel{
@@ -340,37 +341,46 @@
 	    & span.room{
 	    	background-image: url('../../images/home/sprite.png');
 		    background-position:17px 13px;
+		    opacity: .7;
 
 	    }
 	    & span.restaurant{
 	    	background-image: url('../../images/home/sprite.png');
 	        background-position: -109px 7px;
+	        opacity: .7;
 	    }
 	    & span.meeting{
 	    	background-image: url('../../images/home/sprite.png');
-	        background-position: -232px 7px;}
+	        background-position: -232px 7px;
+	        opacity: .7;
+	    }
 	    & span.pool{
 	    	background-image: url('../../images/home/sprite.png');
 		      background-size: 750px;
     background-position: -328px 14px;
+    opacity: .7;
 	    }
 	    & span.bar{
 	    	background-image: url('../../images/home/sprite.png');
 		          background-size: 750px;
     background-position: -442px 11px;
+    opacity: .7;
 
 	    }
 	    & span.dining{
 	    	background-image: url('../../images/home/sprite.png');
 	        width: 117px;
-		       background-size: 700px;
-    background-position: -500px 16px;
+		       background-size: 600px;
+    background-position:-420px 22px;
+    opacity: .7;
 	    }
 	    & span.office{
 	    	background-image: url('../../images/home/sprite.png');
 	        width: 104px;
-		        background-size: 700px;
-    background-position: -613px 13px;
+		        background-size: 600px;
+    background-position: -518px 20px;
+    opacity: .7;
+
 	    }
 
 	    & span.Oficinas{
@@ -378,9 +388,10 @@
     	    width: 101px;
 		    height: 66px;
 		    background-size: 1200px;
-	        background-position: 9px 15px;
+	        background-position: 9px 9px;
             margin-left: 25px;
             margin-top: 20px; 
+            opacity: .7;
 	    }
 	    & span.Hoteles{
 	    	background-image: url('../../images/home/sprite3.png');
@@ -390,6 +401,7 @@
         background-position:-110px 7px;
         margin-left: 25px;
         margin-top: 20px; 
+        opacity: .7;
 	    }
 	    & span.Restaurantes{
 	    	background-image: url('../../images/home/sprite3.png');
@@ -399,6 +411,7 @@
         background-position: -238px 4px;
         margin-left: 25px;
         margin-top: 20px; 
+        opacity: .7;
 	    }
 	    & span.Centros.educativos{
 	    	background-image: url('../../images/home/sprite3.png');
@@ -408,6 +421,7 @@
         background-position: -364px 5px;
         margin-left: 25px;
         margin-top: 20px; 
+        opacity: .7;
 	    }
 	    & span.Centros.de.salud{
 	    	background-image: url('../../images/home/sprite3.png');
@@ -417,6 +431,7 @@
         background-position: -481px 7px;
         margin-left: 25px;
         margin-top: 20px; 
+        opacity: .7;
 	    }
 	    & span.Bar{
 	    	background-image: url('../../images/home/sprite3.png');
@@ -426,6 +441,7 @@
         background-position:-611px 6px;
         margin-left: 25px;
         margin-top: 20px; 
+        opacity: .7;
 	    }
 	    & span.Tiendas.de.conveniencia{
 	    	background-image: url('../../images/home/sprite3.png');
@@ -434,7 +450,8 @@
 	    background-size: 1100px;
         background-position:-665px 11px;
 	    margin-left: 25px;
-	    margin-top: 20px; 
+	    margin-top: 20px;
+	    opacity: .7; 
 	    }
 	    & span.Spa{
 	    	background-image: url('../../images/home/sprite3.png');
@@ -443,16 +460,18 @@
 	    background-size: 1200px;
         background-position:-863px 3px;
 	    margin-left: 25px;
-	    margin-top: 20px; 
+	    margin-top: 20px;
+	    opacity: .7; 
 	    }
 	    & span.Entretenimiento{
 	    	background-image: url('../../images/home/sprite3.png');
         width: 101px;
 	    height: 66px;
-	    background-size: 1200px;
-        background-position:-988px 2px;
+	    background-size: 1100px;
+        background-position:-901px 7px;
 	    margin-left: 25px;
 	    margin-top: 20px;
+	    opacity: .7;
 	    } 
 	    & span.Travel{
 	    	background-image: url('../../images/home/sprite3.png');
@@ -462,6 +481,7 @@
         background-position: -1110px -3px;
 	    margin-left: 25px;
 	    margin-top: 20px;
+	    opacity: .7;
 	    } 
 	}
 	.checkbox{

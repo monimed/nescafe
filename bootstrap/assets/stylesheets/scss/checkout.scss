@@ -345,12 +345,41 @@
                         }
                         .order-review{
                             h2{
-                                font-size: 25px;
+                                font-size: 20px;
                             }
                             h3{
                                 color: $red;
                                 font-family: 'NescafeSans-Bold';
                                 font-size: 14px;
+                            }
+                            .table-total{
+                                tfoot{
+                                    background:#fff!important;
+                                    border:1px solid $red;
+                                    float: right;
+                                    width: 43%;
+                                    padding: 0 6px;
+                                    tr{
+                                            border-bottom: 1px solid #f2f2f2;
+                                    }
+                                    .total-gral{
+                                        border-top: 1px solid $red;
+                                        th{
+                                            font-weight: bold;
+                                        }
+                                    }
+                                    th{
+                                        font-weight: normal;
+
+                                    }
+                                    .item-option{
+                                       width:40%!important;
+                                    }
+                                    .price{
+                                        width: 55%!important;
+                                        color:$red;
+                                    }
+                                }
                             }
                             table{
                                 thead{
@@ -407,16 +436,19 @@
                                             border: none;
                                         }
                                         .item-option{
-                                            color: $red;    
+                                            color: $red;   
                                         }
                                     }
                                 }
                             }
                             .links{
                                 form{
+                                    li{
+                                            padding-left: 2%;
+                                    }
                                     .control{
                                         .float-right{
-                                            float: right;
+                                                padding-left: 57%;
                                         }
                                         .glyphicon-refresh{
                                             color: $red;
